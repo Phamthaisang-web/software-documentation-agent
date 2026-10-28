@@ -1,0 +1,24 @@
+# API Specification Template
+openapi: 3.1.0
+info:
+  title: "{PROJECT_NAME} API"
+  version: "1.0.0"
+  description: "Official REST API Specification for {PROJECT_NAME}"
+servers:
+  - url: "https://api.example.com/v1"
+    description: "Production Server"
+paths:
+  /health:
+    get:
+      summary: "System Health Check"
+      responses:
+        '200':
+          description: "Service is running normally"
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "UP"

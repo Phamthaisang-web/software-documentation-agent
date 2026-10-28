@@ -1,0 +1,295 @@
+project_id: telegramai
+project_name: TelegramAI
+project_goal: Hệ thống phần mềm TelegramAI phục vụ chuyển đổi số và tự động hóa quy
+  trình nghiệp vụ.
+analysis_timestamp: '2026-10-28T21:17:45.141385+00:00'
+status: VERIFIED
+business_problem:
+  description: Giải quyết bài toán quản trị và tối ưu hóa vận hành cho hệ thống TelegramAI.
+  status: INFERRED
+  evidence_refs:
+  - pytest.ini
+  - TEST_RESULTS.md
+users_and_stakeholders:
+- id: STK-001
+  name: Product Owner
+  role: Product Owner
+  influence: HIGH
+  status: INFERRED
+  evidence_refs: []
+- id: STK-002
+  name: Development Team
+  role: Developers
+  influence: HIGH
+  status: VERIFIED
+  evidence_refs:
+  - pytest.ini
+- id: STK-003
+  name: End User
+  role: Customer / User
+  influence: MEDIUM
+  status: INFERRED
+  evidence_refs: []
+scope:
+  in_scope:
+  - Các tính năng được khai báo trong API và giao diện mã nguồn
+  - Xác thực và bảo mật cơ bản
+  out_of_scope:
+  - Các module ngoài phạm vi repository hiện tại
+  - Tích hợp hệ thống legacy không có tài liệu kỹ thuật
+technologies:
+  languages:
+  - Python
+  - JavaScript
+  frameworks: []
+  databases: []
+  libraries: []
+  evidence_refs:
+  - antigravity-bridge/requirements.txt
+  - backend-bot/requirements.txt
+  - desktop-agent/requirements.txt
+  - TelegramAI.pytest_tmptmp/test_antigravity_adapter_creat0/sneaker-shop/package.json
+system_architecture:
+  style: Layered Modular Architecture
+  components:
+  - name: API Gateway / Controllers
+    purpose: Tiếp nhận và xử lý request HTTP
+    status: INFERRED
+    evidence_refs: []
+  - name: Business Service Layer
+    purpose: Xử lý logic nghiệp vụ và ràng buộc hệ thống
+    status: INFERRED
+    evidence_refs: []
+  - name: Data Access Layer
+    purpose: Giao tiếp và quản trị dữ liệu CSDL
+    status: UNKNOWN
+    evidence_refs: []
+  dependencies: []
+  status: VERIFIED
+  evidence_refs:
+  - antigravity-bridge/requirements.txt
+  - backend-bot/requirements.txt
+functional_requirements:
+- id: REQ-FUNC-001
+  title: Xác thực và phân quyền người dùng
+  description: Cho phép người dùng đăng nhập an toàn và truy cập tính năng theo vai
+    trò
+  status: INFERRED
+  evidence_refs: []
+non_functional_requirements:
+- id: REQ-NF-PERF-001
+  category: Performance
+  target_metric: Response time <= 500ms for 95th percentile under normal load
+  status: INFERRED
+  evidence_refs: []
+- id: REQ-NF-SEC-001
+  category: Security
+  target_metric: OWASP Top 10 compliance with JWT authentication and HTTPS transmission
+  status: INFERRED
+  evidence_refs: []
+data_models:
+  entities:
+  - name: User
+    attributes:
+    - id
+    - email
+    - password_hash
+    - role
+    - created_at
+    relationships: []
+    status: INFERRED
+    evidence_refs: []
+  status: UNKNOWN
+apis:
+- id: API-001
+  method: GET
+  path: /health
+  auth_required: false
+  status: INFERRED
+  evidence_refs: []
+roles_and_permissions:
+- role: Administrator
+  permissions:
+  - system:read
+  - system:write
+  - users:manage
+  status: INFERRED
+  evidence_refs: []
+- role: User
+  permissions:
+  - profile:read
+  - profile:write
+  status: INFERRED
+  evidence_refs: []
+external_integrations: []
+deployment_environments:
+  containerized: false
+  orchestration: UNKNOWN
+  ci_cd_pipelines: []
+  status: INFERRED
+security:
+  auth_methods:
+  - Standard Auth
+  encryption: TLS/HTTPS in transit
+  status: INFERRED
+testing_strategy:
+  automated_tests_found: true
+  frameworks: []
+  execution_evidence: NOT_EXECUTED
+  status: VERIFIED
+project_management:
+  methodology: Scrum
+  sprint_length_weeks: 2.0
+  status: INFERRED
+known_risks_and_limitations:
+- id: RISK-001
+  description: Tài liệu kiểm thử tự động chưa có báo cáo thực thi gần nhất
+  severity: MEDIUM
+  mitigation: Thiết lập pipeline CI tự động chạy test và lưu log báo cáo
+missing_information:
+- item: Danh sách tính năng chi tiết chưa có tài liệu đặc tả
+  impact: HIGH
+  recommended_action: Cung cấp đặc tả nghiệp vụ hoặc xác nhận danh sách API routes
+conflicting_information: []
+evidence_references:
+- ref_id: EVID-001
+  source_path: pytest.ini
+  source_type: TEST_SUITE
+- ref_id: EVID-002
+  source_path: TEST_RESULTS.md
+  source_type: TEST_SUITE
+- ref_id: EVID-003
+  source_path: antigravity-bridge/requirements.txt
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-004
+  source_path: backend-bot/requirements.txt
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-005
+  source_path: desktop-agent/requirements.txt
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-006
+  source_path: scripts/run_project_tests.py
+  source_type: TEST_SUITE
+- ref_id: EVID-007
+  source_path: TelegramAI.pytest_tmptmp/test_agents_pair_endpoint_alia0/test_installer.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-008
+  source_path: TelegramAI.pytest_tmptmp/test_ai_planner_cancellation0/test_planner.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-009
+  source_path: TelegramAI.pytest_tmptmp/test_ai_planner_explicit_name_0/test_planner.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-010
+  source_path: TelegramAI.pytest_tmptmp/test_ai_planner_three_turn_slo0/test_planner.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-011
+  source_path: TelegramAI.pytest_tmptmp/test_antigravity_adapter_creat0/sneaker-shop/package.json
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-012
+  source_path: TelegramAI.pytest_tmptmp/test_api_pairing_endpoint0/test_multi_agent.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-013
+  source_path: TelegramAI.pytest_tmptmp/test_download_agent_zip0/test_installer.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-014
+  source_path: TelegramAI.pytest_tmptmp/test_install_ps1_default_host0/test_installer_def.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-015
+  source_path: TelegramAI.pytest_tmptmp/test_install_ps1_endpoint0/test_installer.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-016
+  source_path: TelegramAI.pytest_tmptmp/test_multi_agent_pool_and_swit0/test_multi_agent.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-017
+  source_path: TelegramAI.pytest_tmptmp/test_multi_agent_workspace_and0/test_reg.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-018
+  source_path: TelegramAI.pytest_tmptmp/test_multi_agent_workspace_and0/test_store.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-019
+  source_path: TelegramAI.pytest_tmptmp/test_native_vs_internal_antigr0/test_reg.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-020
+  source_path: TelegramAI.pytest_tmptmp/test_native_vs_internal_antigr0/test_store.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-021
+  source_path: TelegramAI.pytest_tmptmp/test_pairing_code_generation_a0/test_multi_agent.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-022
+  source_path: TelegramAI.pytest_tmptmp/test_pairing_redeem_flow0/test_multi_agent.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-023
+  source_path: TelegramAI.pytest_tmptmp/test_resolution_failure_when_a0/test_reg.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-024
+  source_path: TelegramAI.pytest_tmptmp/test_resolution_failure_when_a0/test_store.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-025
+  source_path: TelegramAI.pytest_tmptmp/test_resolution_hierarchy_and_0/test_reg.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-026
+  source_path: TelegramAI.pytest_tmptmp/test_resolution_hierarchy_and_0/test_store.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-027
+  source_path: TelegramAI.pytest_tmptmp/test_telegram_multi_agent_comm0/test_multi_agent.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-028
+  source_path: TelegramAI.pytest_tmptmp/test_websocket_dynamic_auth_an0/test_multi_agent.sqlite3
+  source_type: TEST_SUITE
+- ref_id: EVID-029
+  source_path: tests/test_ai_planner.py
+  source_type: TEST_SUITE
+- ref_id: EVID-030
+  source_path: tests/test_antigravity.py
+  source_type: TEST_SUITE
+- ref_id: EVID-031
+  source_path: tests/test_antigravity_adapter.py
+  source_type: TEST_SUITE
+- ref_id: EVID-032
+  source_path: tests/test_antigravity_instance_identification.py
+  source_type: TEST_SUITE
+- ref_id: EVID-033
+  source_path: tests/test_codex_provider.py
+  source_type: TEST_SUITE
+- ref_id: EVID-034
+  source_path: tests/test_installer_flow.py
+  source_type: TEST_SUITE
+- ref_id: EVID-035
+  source_path: tests/test_interaction_relay.py
+  source_type: TEST_SUITE
+- ref_id: EVID-036
+  source_path: tests/test_multi_agent_pairing.py
+  source_type: TEST_SUITE
+- ref_id: EVID-037
+  source_path: tests/test_phase1.py
+  source_type: TEST_SUITE
+- ref_id: EVID-038
+  source_path: tests/test_phase2.py
+  source_type: TEST_SUITE
+- ref_id: EVID-039
+  source_path: tests/test_phase3.py
+  source_type: TEST_SUITE
+- ref_id: EVID-040
+  source_path: tests/test_phase4.py
+  source_type: TEST_SUITE
+- ref_id: EVID-041
+  source_path: tests/test_phase5.py
+  source_type: TEST_SUITE
+- ref_id: EVID-042
+  source_path: tests/test_phase6.py
+  source_type: TEST_SUITE
+- ref_id: EVID-043
+  source_path: tests/test_phase7.py
+  source_type: TEST_SUITE
+- ref_id: EVID-044
+  source_path: tests/test_phase7x.py
+  source_type: TEST_SUITE
+- ref_id: EVID-045
+  source_path: tests/test_phase8.py
+  source_type: TEST_SUITE
+- ref_id: EVID-046
+  source_path: tests/test_phase9.py
+  source_type: TEST_SUITE
+- ref_id: EVID-047
+  source_path: tests/test_workspace.py
+  source_type: TEST_SUITE

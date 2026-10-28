@@ -1,0 +1,355 @@
+project_id: chatbotantigravity
+project_name: ChatBotAntigravity
+project_goal: Hệ thống phần mềm ChatBotAntigravity phục vụ chuyển đổi số và tự động
+  hóa quy trình nghiệp vụ.
+analysis_timestamp: '2026-10-28T21:16:12.036357+00:00'
+status: VERIFIED
+business_problem:
+  description: Giải quyết bài toán quản trị và tối ưu hóa vận hành cho hệ thống ChatBotAntigravity.
+  status: INFERRED
+  evidence_refs:
+  - package.json
+  - agent/package.json
+users_and_stakeholders:
+- id: STK-001
+  name: Product Owner
+  role: Product Owner
+  influence: HIGH
+  status: INFERRED
+  evidence_refs: []
+- id: STK-002
+  name: Development Team
+  role: Developers
+  influence: HIGH
+  status: VERIFIED
+  evidence_refs:
+  - package.json
+- id: STK-003
+  name: End User
+  role: Customer / User
+  influence: MEDIUM
+  status: INFERRED
+  evidence_refs: []
+scope:
+  in_scope:
+  - Các tính năng được khai báo trong API và giao diện mã nguồn
+  - Xác thực và bảo mật cơ bản
+  out_of_scope:
+  - Các module ngoài phạm vi repository hiện tại
+  - Tích hợp hệ thống legacy không có tài liệu kỹ thuật
+technologies:
+  languages:
+  - JavaScript
+  - TypeScript
+  frameworks:
+  - Prisma ORM
+  - React
+  - Next.js
+  databases: []
+  libraries: []
+  evidence_refs:
+  - package.json
+  - agent/package.json
+  - backend/package.json
+  - frontend/package.json
+  - shared/package.json
+system_architecture:
+  style: Layered Modular Architecture
+  components:
+  - name: API Gateway / Controllers
+    purpose: Tiếp nhận và xử lý request HTTP
+    status: VERIFIED
+    evidence_refs: []
+  - name: Business Service Layer
+    purpose: Xử lý logic nghiệp vụ và ràng buộc hệ thống
+    status: INFERRED
+    evidence_refs: []
+  - name: Data Access Layer
+    purpose: Giao tiếp và quản trị dữ liệu CSDL
+    status: VERIFIED
+    evidence_refs: []
+  dependencies: []
+  status: VERIFIED
+  evidence_refs:
+  - package.json
+  - agent/package.json
+functional_requirements:
+- id: REQ-FUNC-001
+  title: Cung cấp giao diện POST /api/v1/auth/register
+  description: Xử lý yêu cầu API POST tại đường dẫn /api/v1/auth/register
+  status: VERIFIED
+  evidence_refs: &id001
+  - backend/src/api/auth.ts
+- id: REQ-FUNC-002
+  title: Cung cấp giao diện POST /api/v1/auth/login
+  description: Xử lý yêu cầu API POST tại đường dẫn /api/v1/auth/login
+  status: VERIFIED
+  evidence_refs: &id002
+  - backend/src/api/auth.ts
+- id: REQ-FUNC-003
+  title: Cung cấp giao diện GET /api/v1/auth/me
+  description: Xử lý yêu cầu API GET tại đường dẫn /api/v1/auth/me
+  status: VERIFIED
+  evidence_refs: &id003
+  - backend/src/api/auth.ts
+- id: REQ-FUNC-004
+  title: Cung cấp giao diện GET /api/v1/chat/projects
+  description: Xử lý yêu cầu API GET tại đường dẫn /api/v1/chat/projects
+  status: VERIFIED
+  evidence_refs: &id004
+  - backend/src/api/chat.ts
+- id: REQ-FUNC-005
+  title: Cung cấp giao diện GET /api/v1/chat/conversations
+  description: Xử lý yêu cầu API GET tại đường dẫn /api/v1/chat/conversations
+  status: VERIFIED
+  evidence_refs: &id005
+  - backend/src/api/chat.ts
+- id: REQ-FUNC-006
+  title: Cung cấp giao diện POST /api/v1/chat/projects/:projectId/conversations
+  description: Xử lý yêu cầu API POST tại đường dẫn /api/v1/chat/projects/:projectId/conversations
+  status: VERIFIED
+  evidence_refs: &id006
+  - backend/src/api/chat.ts
+- id: REQ-FUNC-007
+  title: Cung cấp giao diện GET /api/v1/chat/conversations/:conversationId
+  description: Xử lý yêu cầu API GET tại đường dẫn /api/v1/chat/conversations/:conversationId
+  status: VERIFIED
+  evidence_refs: &id007
+  - backend/src/api/chat.ts
+- id: REQ-FUNC-008
+  title: Cung cấp giao diện GET /api/v1/chat/conversations/:conversationId/messages
+  description: Xử lý yêu cầu API GET tại đường dẫn /api/v1/chat/conversations/:conversationId/messages
+  status: VERIFIED
+  evidence_refs: &id008
+  - backend/src/api/chat.ts
+- id: REQ-FUNC-009
+  title: Cung cấp giao diện POST /api/v1/chat/conversations/:conversationId/messages
+  description: Xử lý yêu cầu API POST tại đường dẫn /api/v1/chat/conversations/:conversationId/messages
+  status: VERIFIED
+  evidence_refs: &id009
+  - backend/src/api/chat.ts
+- id: REQ-FUNC-010
+  title: Cung cấp giao diện POST /api/v1/devices/pairing-code
+  description: Xử lý yêu cầu API POST tại đường dẫn /api/v1/devices/pairing-code
+  status: VERIFIED
+  evidence_refs: &id010
+  - backend/src/api/devices.ts
+non_functional_requirements:
+- id: REQ-NF-PERF-001
+  category: Performance
+  target_metric: Response time <= 500ms for 95th percentile under normal load
+  status: INFERRED
+  evidence_refs: []
+- id: REQ-NF-SEC-001
+  category: Security
+  target_metric: OWASP Top 10 compliance with JWT authentication and HTTPS transmission
+  status: INFERRED
+  evidence_refs: []
+data_models:
+  entities:
+  - name: Device
+    attributes:
+    - id
+    - created_at
+    relationships: []
+    status: VERIFIED
+    evidence_refs:
+    - backend/prisma/schema.prisma
+  - name: ProjectMember
+    attributes:
+    - id
+    - created_at
+    relationships: []
+    status: VERIFIED
+    evidence_refs:
+    - backend/prisma/schema.prisma
+  - name: Message
+    attributes:
+    - id
+    - created_at
+    relationships: []
+    status: VERIFIED
+    evidence_refs:
+    - backend/prisma/schema.prisma
+  - name: Project
+    attributes:
+    - id
+    - created_at
+    relationships: []
+    status: VERIFIED
+    evidence_refs:
+    - backend/prisma/schema.prisma
+  - name: Conversation
+    attributes:
+    - id
+    - created_at
+    relationships: []
+    status: VERIFIED
+    evidence_refs:
+    - backend/prisma/schema.prisma
+  - name: User
+    attributes:
+    - id
+    - created_at
+    relationships: []
+    status: VERIFIED
+    evidence_refs:
+    - backend/prisma/schema.prisma
+  - name: Task
+    attributes:
+    - id
+    - created_at
+    relationships: []
+    status: VERIFIED
+    evidence_refs:
+    - backend/prisma/schema.prisma
+  status: VERIFIED
+apis:
+- id: API-001
+  method: POST
+  path: /api/v1/auth/register
+  auth_required: true
+  status: VERIFIED
+  evidence_refs: *id001
+- id: API-002
+  method: POST
+  path: /api/v1/auth/login
+  auth_required: true
+  status: VERIFIED
+  evidence_refs: *id002
+- id: API-003
+  method: GET
+  path: /api/v1/auth/me
+  auth_required: true
+  status: VERIFIED
+  evidence_refs: *id003
+- id: API-004
+  method: GET
+  path: /api/v1/chat/projects
+  auth_required: false
+  status: VERIFIED
+  evidence_refs: *id004
+- id: API-005
+  method: GET
+  path: /api/v1/chat/conversations
+  auth_required: false
+  status: VERIFIED
+  evidence_refs: *id005
+- id: API-006
+  method: POST
+  path: /api/v1/chat/projects/:projectId/conversations
+  auth_required: false
+  status: VERIFIED
+  evidence_refs: *id006
+- id: API-007
+  method: GET
+  path: /api/v1/chat/conversations/:conversationId
+  auth_required: false
+  status: VERIFIED
+  evidence_refs: *id007
+- id: API-008
+  method: GET
+  path: /api/v1/chat/conversations/:conversationId/messages
+  auth_required: false
+  status: VERIFIED
+  evidence_refs: *id008
+- id: API-009
+  method: POST
+  path: /api/v1/chat/conversations/:conversationId/messages
+  auth_required: false
+  status: VERIFIED
+  evidence_refs: *id009
+- id: API-010
+  method: POST
+  path: /api/v1/devices/pairing-code
+  auth_required: true
+  status: VERIFIED
+  evidence_refs: *id010
+- id: API-011
+  method: POST
+  path: /api/v1/auth/device-pair
+  auth_required: true
+  status: VERIFIED
+  evidence_refs:
+  - backend/src/api/devices.ts
+- id: API-012
+  method: GET
+  path: /api/v1/devices
+  auth_required: true
+  status: VERIFIED
+  evidence_refs:
+  - backend/src/api/devices.ts
+- id: API-013
+  method: GET
+  path: /api/v1/chat/ws
+  auth_required: false
+  status: VERIFIED
+  evidence_refs:
+  - backend/src/api/frontend-ws.ts
+- id: API-014
+  method: GET
+  path: /api/v1/tasks
+  auth_required: true
+  status: VERIFIED
+  evidence_refs:
+  - backend/src/api/tasks.ts
+roles_and_permissions:
+- role: Administrator
+  permissions:
+  - system:read
+  - system:write
+  - users:manage
+  status: INFERRED
+  evidence_refs: []
+- role: User
+  permissions:
+  - profile:read
+  - profile:write
+  status: INFERRED
+  evidence_refs: []
+external_integrations: []
+deployment_environments:
+  containerized: true
+  orchestration: Docker Compose
+  ci_cd_pipelines: []
+  status: VERIFIED
+security:
+  auth_methods:
+  - Standard Auth
+  encryption: TLS/HTTPS in transit
+  status: INFERRED
+testing_strategy:
+  automated_tests_found: false
+  frameworks: []
+  execution_evidence: NOT_EXECUTED
+  status: UNKNOWN
+project_management:
+  methodology: Scrum
+  sprint_length_weeks: 2.0
+  status: INFERRED
+known_risks_and_limitations:
+- id: RISK-001
+  description: Tài liệu kiểm thử tự động chưa có báo cáo thực thi gần nhất
+  severity: MEDIUM
+  mitigation: Thiết lập pipeline CI tự động chạy test và lưu log báo cáo
+missing_information: []
+conflicting_information: []
+evidence_references:
+- ref_id: EVID-001
+  source_path: package.json
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-002
+  source_path: agent/package.json
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-003
+  source_path: backend/package.json
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-004
+  source_path: backend/prisma/schema.prisma
+  source_type: DATABASE_SCHEMA
+- ref_id: EVID-005
+  source_path: frontend/package.json
+  source_type: PACKAGE_MANIFEST
+- ref_id: EVID-006
+  source_path: shared/package.json
+  source_type: PACKAGE_MANIFEST

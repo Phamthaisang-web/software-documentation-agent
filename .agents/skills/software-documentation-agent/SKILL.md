@@ -4,7 +4,7 @@ description: >-
   Use this skill when the user asks to analyze a software codebase, create, update, or validate technical documentation across Project Management, Requirements, Scrum, Architecture, Testing, and Delivery (59 document types). Supports DOCX, XLSX, Markdown, OpenAPI, and Mermaid formats with strict traceability, template preservation, and official standards conformance (ISO 29148, ISO 42010, ISO 29119, Scrum Guide 2020).
 ---
 
-# Software Documentation Agent — Native Workspace Skill
+# Software Documentation Agent — Native Skill
 
 Chuyên gia kiến trúc phần mềm, kỹ sư yêu cầu, Scrum Master và kiểm thử chất lượng phần mềm tự động hóa toàn diện quy trình tài liệu hóa dự án.
 
@@ -28,27 +28,27 @@ Chuyên gia kiến trúc phần mềm, kỹ sư yêu cầu, Scrum Master và ki�
 
 ### Phân tích dự án hiện tại
 ```powershell
-python Software-Documentation-Agent/09_Tools/cli.py analyze --target .
+python "d:/agenttl1/Software-Documentation-Agent/09_Tools/cli.py" analyze --target .
 ```
 
 ### Tạo một tài liệu đơn lẻ
 ```powershell
-python Software-Documentation-Agent/09_Tools/cli.py generate --doc-id DOC-REQ-001
+python "d:/agenttl1/Software-Documentation-Agent/09_Tools/cli.py" generate --doc-id DOC-REQ-001
 ```
 
 ### Tạo trọn bộ tài liệu
 ```powershell
-python Software-Documentation-Agent/09_Tools/cli.py generate-set
+python "d:/agenttl1/Software-Documentation-Agent/09_Tools/cli.py" generate-set
 ```
 
 ### Chạy thẩm định hệ thống
 ```powershell
-python Software-Documentation-Agent/09_Tools/cli.py validate
+python "d:/agenttl1/Software-Documentation-Agent/09_Tools/cli.py" validate
 ```
 
 ### Chạy toàn bộ 40 bài kiểm thử tự động
 ```powershell
-python -m pytest Software-Documentation-Agent/10_Tests -v
+python -m pytest "d:/agenttl1/Software-Documentation-Agent/10_Tests" -v
 ```
 
 ---
