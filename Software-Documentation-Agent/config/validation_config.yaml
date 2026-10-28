@@ -1,0 +1,48 @@
+validation:
+  version: "1.0.0"
+  strict_mode: true
+  fail_on_blocker: true
+  fail_on_critical: true
+  fail_on_missing_rules: true
+  fail_on_broken_traceability: true
+
+severities:
+  BLOCKER:
+    description: "Loi nghiem trong khong the bo qua, ngan chan hoan toan qua trinh phat hanh tai lieu"
+    exit_code: 1
+  CRITICAL:
+    description: "Vi pham quy tac tieu chuan cot loi (vi du: sai timebox Scrum, chua chay test ma bao PASS)"
+    exit_code: 1
+  MAJOR:
+    description: "Thieu truong du lieu bat buoc hoac thieu lien ket truy xuat"
+    exit_code: 0
+  MINOR:
+    description: "Loi dinh dang nhe hoac thieu thong tin tuy chon"
+    exit_code: 0
+  INFO:
+    description: "Thong tin huong dan hoac goi y bo sung"
+    exit_code: 0
+
+scrum_constraints:
+  max_sprint_duration_days: 31
+  events_timeboxes:
+    sprint_planning_max_hours_one_month: 8.0
+    sprint_review_max_hours_one_month: 4.0
+    sprint_retro_max_hours_one_month: 3.0
+    daily_scrum_minutes: 15
+  commitments:
+    product_backlog: "Product Goal"
+    sprint_backlog: "Sprint Goal"
+    increment: "Definition of Done"
+  optional_practices:
+    - "Story Points"
+    - "Velocity"
+    - "Burndown Chart"
+    - "Definition of Ready"
+    - "Daily Scrum Log"
+    - "Release Backlog"
+
+traceability_checks:
+  enforce_parent_exists: true
+  detect_orphans: true
+  bidirectional_linking: true

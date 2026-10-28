@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DocumentMetadata",
+  "description": "Metadata accompanying generated software documents",
+  "type": "object",
+  "required": [
+    "document_id",
+    "title",
+    "project_id",
+    "version",
+    "created_at",
+    "updated_at",
+    "lifecycle_status",
+    "template_used"
+  ],
+  "properties": {
+    "document_id": { "type": "string", "pattern": "^DOC-[A-Z]+-[0-9]{3}$" },
+    "title": { "type": "string" },
+    "project_id": { "type": "string" },
+    "version": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "authors": { "type": "array", "items": { "type": "string" } },
+    "reviewers": { "type": "array", "items": { "type": "string" } },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["DRAFT", "UNDER_REVIEW", "APPROVED", "SUPERSEDED", "DEPRECATED"]
+    },
+    "template_used": { "type": "string" },
+    "source_standards": { "type": "array", "items": { "type": "string" } },
+    "traceability_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["relation", "target_id"],
+        "properties": {
+          "relation": { "type": "string" },
+          "target_id": { "type": "string" }
+        }
+      }
+    },
+    "unverified_items": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

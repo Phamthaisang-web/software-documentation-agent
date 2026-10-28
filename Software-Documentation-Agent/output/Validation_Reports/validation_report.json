@@ -1,0 +1,98 @@
+{
+  "report_id": "VAL-REP-20261029040439",
+  "generated_at": "2026-10-28T21:04:39.962572+00:00",
+  "target_scope": "Software Documentation Agent System",
+  "summary": {
+    "total_checks": 9,
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0,
+    "not_run": 0,
+    "status": "PASSED"
+  },
+  "results": [
+    {
+      "check_id": "CHK-DOC-COUNT",
+      "category": "Registry",
+      "target": "document_registry.yaml",
+      "rule_id": "RULE-GLOB-003",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Đủ chính xác 59 loại tài liệu trong Document Registry (Nhóm A đến Nhóm E)."
+    },
+    {
+      "check_id": "CHK-DOC-UNIQUE-ID",
+      "category": "Registry",
+      "target": "document_registry.yaml",
+      "rule_id": "RULE-GLOB-003",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Không có Document ID nào bị trùng lặp."
+    },
+    {
+      "check_id": "CHK-STD-STATUS-ALL",
+      "category": "Standards",
+      "target": "standards_registry.yaml",
+      "rule_id": "RULE-GLOB-002",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Tất cả 10 nguồn tiêu chuẩn có trạng thái xác minh hợp lệ."
+    },
+    {
+      "check_id": "CHK-TPL-COVERAGE",
+      "category": "Template",
+      "target": "template_registry.yaml",
+      "rule_id": "RULE-GLOB-004",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Tất cả 59 tài liệu đều có bản ghi Template tương ứng."
+    },
+    {
+      "check_id": "CHK-TPL-FILES-EXIST",
+      "category": "Template",
+      "target": "03_Templates",
+      "rule_id": "RULE-GLOB-004",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Tất cả 59 tệp mẫu vật lý đều thực sự tồn tại trên đĩa."
+    },
+    {
+      "check_id": "CHK-TPL-HONEST-ORIGIN",
+      "category": "Template",
+      "target": "template_registry.yaml",
+      "rule_id": "RULE-GLOB-002",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Không có mẫu do AI tạo bị ghi nhầm thành mẫu chính thức (OFFICIAL_SOURCE)."
+    },
+    {
+      "check_id": "CHK-RULE-COVERAGE",
+      "category": "Rules",
+      "target": "01_Rules",
+      "rule_id": "RULE-GLOB-001",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Tất cả các Rule files được tham chiếu bởi 59 tài liệu đều tồn tại thực tế."
+    },
+    {
+      "check_id": "CHK-SCRUM-CONSTRAINTS",
+      "category": "Scrum",
+      "target": "Scrum Timeboxes & Rules",
+      "rule_id": "RULE-SCRUM-019",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Các ràng buộc thời lượng Scrum (Sprint <= 1 tháng, Daily = 15m, Planning/Review/Retro timeboxes, DoR là bổ trợ) được tuân thủ nghiêm ngặt."
+    },
+    {
+      "check_id": "CHK-TRACEABILITY",
+      "category": "Traceability",
+      "target": "Document Dependency Graph",
+      "rule_id": "RULE-GLOB-006",
+      "status": "PASSED",
+      "severity": "INFO",
+      "message": "Mạng lưới truy xuất nguồn gốc giữa các tài liệu hợp lệ (không có broken links)."
+    }
+  ],
+  "missing_items": [],
+  "traceability_issues": []
+}

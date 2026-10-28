@@ -1,0 +1,16 @@
+document_id: DOC-PM-001
+title: Project Charter
+project_id: payflow_core
+version: 1.0.0
+created_at: '2026-10-28T21:08:05.441423+00:00'
+updated_at: '2026-10-28T21:08:05.441423+00:00'
+authors:
+- Software Documentation Agent
+reviewers:
+- Engineering Lead (Pending)
+lifecycle_status: DRAFT
+template_used: Project Charter Template
+source_standards:
+- STD-PM-21500
+traceability_links: []
+unverified_items: []

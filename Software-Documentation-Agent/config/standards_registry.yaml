@@ -1,0 +1,168 @@
+standards:
+  - standard_id: STD-SCRUM-2020
+    official_name: "The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game"
+    issuing_organization: "Ken Schwaber and Jeff Sutherland / Scrum.org & Scrum Inc."
+    source_type: FRAMEWORK_GUIDE
+    url: "https://scrumguides.org/scrum-guide.html"
+    download_url: "https://scrumguides.org/download.html"
+    vietnamese_url: "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Vietnamese.pdf"
+    version: "November 2020"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)"
+    scope: "Scrum framework definition, roles/accountabilities, events, and artifacts"
+    verified_clauses:
+      - clause: "Sprint Timebox"
+        content: "Sprints are fixed length events of one month or less to create consistency. A new Sprint starts immediately after the conclusion of the previous Sprint."
+      - clause: "Sprint Planning Timebox"
+        content: "Sprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint. For shorter Sprints, the event is usually shorter."
+      - clause: "Daily Scrum Timebox"
+        content: "The Daily Scrum is a 15-minute event for the Developers of the Scrum Team."
+      - clause: "Sprint Review Timebox"
+        content: "The Sprint Review is timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter."
+      - clause: "Sprint Retrospective Timebox"
+        content: "The Sprint Retrospective is timeboxed to a maximum of three hours for a one-month Sprint. For shorter Sprints, the event is usually shorter."
+      - clause: "Scrum Artifacts and Commitments"
+        content: "Product Backlog (Commitment: Product Goal), Sprint Backlog (Commitment: Sprint Goal), Increment (Commitment: Definition of Done)."
+      - clause: "Non-mandatory practices"
+        content: "Story points, velocity, burndown charts, Definition of Ready, and Daily Scrum logs are optional complementary practices, not mandatory Scrum rules."
+    access_limits: "Full text publicly accessible under CC BY-SA."
+
+  - standard_id: STD-REQ-29148
+    official_name: "ISO/IEC/IEEE 29148:2018 Systems and software engineering — Life cycle processes — Requirements engineering"
+    issuing_organization: "ISO/IEC/IEEE"
+    source_type: STANDARD
+    url: "https://www.iso.org/standard/72089.html"
+    version: "2018 (Confirmed 2024)"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "ISO Copyright Protected"
+    scope: "Processes and products involved in requirements engineering throughout software and systems life cycle"
+    verified_clauses:
+      - clause: "Scope & Requirements Properties"
+        content: "Defines necessary attributes of requirements: necessary, unambiguous, consistent, complete, singular, feasible, verifiable, and traceable."
+      - clause: "Information Item Content"
+        content: "Provides information item descriptions for Stakeholder Requirements Specification, System Requirements Specification, and Software Requirements Specification (SRS)."
+    access_limits: "Scope, table of contents, and terminology verified via ISO official portal. Full standard text is copyright protected and requires purchase."
+
+  - standard_id: STD-ARCH-42010
+    official_name: "ISO/IEC/IEEE 42010:2022 Software, systems and enterprise — Architecture description"
+    issuing_organization: "ISO/IEC/IEEE"
+    source_type: STANDARD
+    url: "https://www.iso.org/standard/74393.html"
+    version: "2022 (Third Edition)"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "ISO Copyright Protected"
+    scope: "Creation, analysis, and sustainment of architecture descriptions in software, systems, and enterprise domains"
+    verified_clauses:
+      - clause: "Architecture Description Elements"
+        content: "Conceptual foundations of architecture descriptions: stakeholders, concerns, architecture viewpoints, architecture views, architecture models, and architecture decisions."
+      - clause: "Architecture Decision Records (ADRs)"
+        content: "Documents context, decision outcome, rationale, and consequences of key architectural choices."
+    access_limits: "Scope, concepts, and structure verified via ISO official portal. Full standard is proprietary."
+
+  - standard_id: STD-TEST-29119-1
+    official_name: "ISO/IEC/IEEE 29119-1:2022 Software and systems engineering — Software testing — Part 1: General concepts"
+    issuing_organization: "ISO/IEC/IEEE"
+    source_type: STANDARD
+    url: "https://www.iso.org/standard/79427.html"
+    version: "2022"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "ISO Copyright Protected"
+    scope: "Testing concepts and terminology across the life cycle"
+    verified_clauses:
+      - clause: "Test Concepts"
+        content: "Defines risk-based testing, test levels, test types, and quality characteristics."
+    access_limits: "Verified via ISO official catalogue. Full text proprietary."
+
+  - standard_id: STD-TEST-29119-2
+    official_name: "ISO/IEC/IEEE 29119-2:2021 Software and systems engineering — Software testing — Part 2: Test processes"
+    issuing_organization: "ISO/IEC/IEEE"
+    source_type: STANDARD
+    url: "https://www.iso.org/standard/79428.html"
+    version: "2021"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "ISO Copyright Protected"
+    scope: "Organizational, test management, and dynamic test processes"
+    verified_clauses:
+      - clause: "Test Management Process"
+        content: "Test planning, test plan monitoring and control, test completion."
+    access_limits: "Verified via ISO official catalogue. Full text proprietary."
+
+  - standard_id: STD-TEST-29119-3
+    official_name: "ISO/IEC/IEEE 29119-3:2021 Software and systems engineering — Software testing — Part 3: Test documentation"
+    issuing_organization: "ISO/IEC/IEEE"
+    source_type: STANDARD
+    url: "https://www.iso.org/standard/79429.html"
+    version: "2021"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "ISO Copyright Protected"
+    scope: "Test documentation templates and structures (Test Plan, Test Case, Test Execution Report, Defect Report)"
+    verified_clauses:
+      - clause: "Test Documentation Items"
+        content: "Organizational Test Policy, Test Strategy, Test Plan, Test Scenario, Test Case, Test Execution Log, Test Incident/Defect Report, Test Summary Report."
+    access_limits: "Verified via ISO official catalogue. Full text proprietary."
+
+  - standard_id: STD-TEST-29119-4
+    official_name: "ISO/IEC/IEEE 29119-4:2021 Software and systems engineering — Software testing — Part 4: Test techniques"
+    issuing_organization: "ISO/IEC/IEEE"
+    source_type: STANDARD
+    url: "https://www.iso.org/standard/79430.html"
+    version: "2021"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "ISO Copyright Protected"
+    scope: "Specification-based, structure-based, and experience-based test design techniques"
+    verified_clauses:
+      - clause: "Test Design Techniques"
+        content: "Equivalence partitioning, boundary value analysis, decision tables, state transition testing, branch testing."
+    access_limits: "Verified via ISO official catalogue. Full text proprietary."
+
+  - standard_id: STD-PM-21500
+    official_name: "ISO 21500:2021 Project, programme and portfolio management — Context and concepts"
+    issuing_organization: "ISO"
+    source_type: STANDARD
+    url: "https://www.iso.org/standard/74620.html"
+    version: "2021"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "ISO Copyright Protected"
+    scope: "Foundational guidance and organizational context for project management"
+    verified_clauses:
+      - clause: "Project Governance and Life Cycle"
+        content: "Integration, stakeholders, scope, resources, schedule, risk, and delivery management."
+    access_limits: "Verified via ISO official portal. Full text proprietary."
+
+  - standard_id: STD-API-OAS31
+    official_name: "OpenAPI Specification Version 3.1.0"
+    issuing_organization: "OpenAPI Initiative / Linux Foundation"
+    source_type: STANDARD
+    url: "https://spec.openapis.org/oas/v3.1.0"
+    version: "3.1.0 (February 2021)"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "Apache License 2.0"
+    scope: "Standard, language-agnostic interface description for HTTP REST APIs"
+    verified_clauses:
+      - clause: "OpenAPI Document Structure"
+        content: "openapi, info, servers, paths, components (schemas, responses, parameters, securitySchemes), security."
+    access_limits: "Full specification publicly available under Apache 2.0."
+
+  - standard_id: STD-SEC-OWASP2021
+    official_name: "OWASP Top 10: 2021"
+    issuing_organization: "Open Web Application Security Project (OWASP)"
+    source_type: STANDARD
+    url: "https://owasp.org/Top10/"
+    version: "2021"
+    last_verified: "2026-10-29"
+    verification_status: VERIFIED_OFFICIAL
+    license: "Creative Commons Attribution-ShareAlike 4.0"
+    scope: "Top 10 web application security risks and mitigation controls"
+    verified_clauses:
+      - clause: "Security Categories"
+        content: "Broken Access Control, Cryptographic Failures, Injection, Insecure Design, Security Misconfiguration, Vulnerable Components, Identification and Authentication Failures, Software and Data Integrity Failures, Security Logging and Monitoring Failures, Server-Side Request Forgery (SSRF)."
+    access_limits: "Publicly accessible."

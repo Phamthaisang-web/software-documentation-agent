@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites time="1.234">
+  <testsuite name="AuthenticationTests" tests="2" failures="0" errors="0" time="0.450">
+    <testcase name="test_login_success" classname="AuthTest" time="0.250"/>
+    <testcase name="test_login_invalid_password" classname="AuthTest" time="0.200"/>
+  </testsuite>
+</testsuites>

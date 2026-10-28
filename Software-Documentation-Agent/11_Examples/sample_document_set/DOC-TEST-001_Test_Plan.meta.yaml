@@ -1,0 +1,20 @@
+document_id: DOC-TEST-001
+title: Test Plan
+project_id: payflow_core
+version: 1.0.0
+created_at: '2026-10-28T21:08:05.637126+00:00'
+updated_at: '2026-10-28T21:08:05.637126+00:00'
+authors:
+- Software Documentation Agent
+reviewers:
+- Engineering Lead (Pending)
+lifecycle_status: DRAFT
+template_used: Test Plan Template
+source_standards:
+- STD-TEST-29119-1
+- STD-TEST-29119-2
+- STD-TEST-29119-3
+traceability_links:
+- relation: depends_on
+  target_id: DOC-REQ-001
+unverified_items: []

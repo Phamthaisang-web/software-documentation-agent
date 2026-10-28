@@ -1,0 +1,18 @@
+document_id: DOC-REQ-003
+title: Functional Requirements Specification
+project_id: payflow_core
+version: 1.0.0
+created_at: '2026-10-28T21:08:05.500696+00:00'
+updated_at: '2026-10-28T21:08:05.500696+00:00'
+authors:
+- Software Documentation Agent
+reviewers:
+- Engineering Lead (Pending)
+lifecycle_status: DRAFT
+template_used: Functional Requirements Template
+source_standards:
+- STD-REQ-29148
+traceability_links:
+- relation: depends_on
+  target_id: DOC-REQ-001
+unverified_items: []

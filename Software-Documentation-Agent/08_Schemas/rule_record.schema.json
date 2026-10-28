@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RuleRecord",
+  "description": "Schema for documentation rules and quality guidelines",
+  "type": "object",
+  "required": [
+    "rule_id",
+    "name",
+    "rule_type",
+    "purpose",
+    "scope",
+    "source_reference",
+    "severity",
+    "validation_method"
+  ],
+  "properties": {
+    "rule_id": {
+      "type": "string",
+      "pattern": "^RULE-[A-Z]+-[0-9]{3}$"
+    },
+    "name": { "type": "string" },
+    "rule_type": {
+      "type": "string",
+      "enum": [
+        "OFFICIAL_REQUIREMENT",
+        "INTERNAL_POLICY",
+        "PROJECT_REQUIREMENT",
+        "RECOMMENDATION",
+        "VALIDATION_CHECK"
+      ]
+    },
+    "purpose": { "type": "string" },
+    "scope": { "type": "string" },
+    "source_reference": {
+      "type": "object",
+      "required": ["source_id", "source_name", "status"],
+      "properties": {
+        "source_id": { "type": "string" },
+        "source_name": { "type": "string" },
+        "clause_or_section": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": [
+            "VERIFIED_OFFICIAL",
+            "VERIFIED_AUTHORITATIVE",
+            "USER_PROVIDED",
+            "INTERNAL_POLICY",
+            "UNVERIFIED",
+            "UNAVAILABLE",
+            "SUPERSEDED"
+          ]
+        }
+      }
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["BLOCKER", "CRITICAL", "MAJOR", "MINOR", "INFO"]
+    },
+    "mandatory_inputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "required_structure_or_fields": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "content_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "quality_criteria": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "naming_and_identifier_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "traceability_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "validation_method": { "type": "string" },
+    "exceptions_and_conditions": { "type": "string" },
+    "examples": {
+      "type": "object",
+      "properties": {
+        "valid": { "type": "array", "items": { "type": "string" } },
+        "invalid": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "related_documents": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "required_evidence": { "type": "string" },
+    "known_limitations": { "type": "string" }
+  }
+}

@@ -1,0 +1,16 @@
+document_id: DOC-ARCH-004
+title: Entity Relationship Diagram
+project_id: payflow_core
+version: 1.0.0
+created_at: '2026-10-28T21:08:05.597251+00:00'
+updated_at: '2026-10-28T21:08:05.597251+00:00'
+authors:
+- Software Documentation Agent
+reviewers:
+- Engineering Lead (Pending)
+lifecycle_status: DRAFT
+template_used: ERD Template
+source_standards:
+- STD-ARCH-42010
+traceability_links: []
+unverified_items: []

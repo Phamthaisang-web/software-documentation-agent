@@ -1,0 +1,21 @@
+document_id: DOC-TEST-003
+title: Test Case Specification
+project_id: payflow_core
+version: 1.0.0
+created_at: '2026-10-28T21:08:05.686760+00:00'
+updated_at: '2026-10-28T21:08:05.686760+00:00'
+authors:
+- Software Documentation Agent
+reviewers:
+- Engineering Lead (Pending)
+lifecycle_status: DRAFT
+template_used: Test Case Specification Template
+source_standards:
+- STD-TEST-29119-3
+- STD-TEST-29119-4
+traceability_links:
+- relation: depends_on
+  target_id: DOC-TEST-002
+- relation: depends_on
+  target_id: DOC-REQ-003
+unverified_items: []

@@ -1,0 +1,36 @@
+report_id: "VAL-REP-SAMPLE-20261029"
+generated_at: "2026-10-29T03:30:00Z"
+target_scope: "PayFlow Digital Payment Platform Documentation Suite"
+summary:
+  total_checks: 15
+  passed: 15
+  failed: 0
+  skipped: 0
+  not_run: 0
+  status: "PASSED"
+
+results:
+  - check_id: "CHK-REG-001"
+    category: "Registry"
+    target: "document_registry.yaml"
+    rule_id: "RULE-GLOB-003"
+    status: "PASSED"
+    severity: "INFO"
+    message: "59/59 loại tài liệu được đăng ký đầy đủ và hợp lệ theo schema."
+  - check_id: "CHK-SCRUM-TIMEBOX-001"
+    category: "Scrum"
+    target: "DOC-SCRUM-010"
+    rule_id: "RULE-SCRUM-019"
+    status: "PASSED"
+    severity: "INFO"
+    message: "Sprint duration là 14 ngày (<= 31 ngày), Sprint Planning là 4 giờ, Daily Scrum là 15 phút."
+  - check_id: "CHK-TEST-AUTHENTICITY-001"
+    category: "Testing"
+    target: "DOC-TEST-004"
+    rule_id: "RULE-TEST-004"
+    status: "PASSED"
+    severity: "INFO"
+    message: "Báo cáo thực thi kiểm thử có tệp log JUnit XML đối chiếu, không phát hiện kết quả giả mạo."
+
+missing_items: []
+traceability_issues: []

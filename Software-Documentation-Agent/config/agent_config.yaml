@@ -1,0 +1,82 @@
+agent:
+  name: "Software Documentation Agent"
+  version: "1.0.0"
+  description: "Autonomous software engineering agent for analyzing codebases, generating, updating, and validating complete technical documentation."
+  language: "vi"
+  author: "Antigravity Engineering Pair"
+  date_initialized: "2026-10-29"
+
+paths:
+  agent_root: "."
+  rules_dir: "01_Rules"
+  standards_dir: "02_Standards"
+  templates_dir: "03_Templates"
+  analyzer_dir: "04_Project_Analyzer"
+  generation_dir: "05_Document_Generation"
+  validation_dir: "06_Validation"
+  workflows_dir: "07_Workflows"
+  schemas_dir: "08_Schemas"
+  tools_dir: "09_Tools"
+  tests_dir: "10_Tests"
+  output_dir: "output"
+
+registries:
+  document_registry: "config/document_registry.yaml"
+  template_registry: "config/template_registry.yaml"
+  standards_registry: "config/standards_registry.yaml"
+  validation_config: "config/validation_config.yaml"
+
+project_analyzer:
+  max_file_size_bytes: 10485760 # 10MB
+  ignored_directories:
+    - ".git"
+    - "node_modules"
+    - "venv"
+    - ".venv"
+    - "__pycache__"
+    - "dist"
+    - "build"
+    - ".next"
+    - ".nuxt"
+    - "target"
+    - "vendor"
+  recognized_manifests:
+    - "package.json"
+    - "requirements.txt"
+    - "pyproject.toml"
+    - "pom.xml"
+    - "build.gradle"
+    - "go.mod"
+    - "Cargo.toml"
+    - "composer.json"
+    - "Gemfile"
+  recognized_infrastructures:
+    - "Dockerfile"
+    - "docker-compose.yml"
+    - "docker-compose.yaml"
+    - "k8s"
+    - ".github/workflows"
+    - ".gitlab-ci.yml"
+    - "Jenkinsfile"
+
+policies:
+  format_preservation:
+    docx:
+      preserve_styles: true
+      preserve_tables: true
+      replace_placeholders_only: true
+    xlsx:
+      preserve_sheets: true
+      preserve_formulas: true
+      preserve_column_widths: true
+    diagrams:
+      preserve_mermaid_source: true
+  security:
+    mask_credentials: true
+    block_untrusted_executables: true
+    min_access_permission: true
+  generation:
+    strict_traceability: true
+    mark_unverified_as_unknown: true
+    forbid_hallucinated_tests: true
+    forbid_fake_approvals: true

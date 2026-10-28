@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TemplateRecord",
+  "description": "Schema for registered document templates",
+  "type": "object",
+  "required": [
+    "template_id",
+    "template_name",
+    "file_path",
+    "document_ids",
+    "format",
+    "origin_type",
+    "status",
+    "required_sections",
+    "format_preservation_requirements",
+    "validation_profile"
+  ],
+  "properties": {
+    "template_id": {
+      "type": "string",
+      "pattern": "^TPL-[A-Z]+-[0-9]{3}$"
+    },
+    "template_name": { "type": "string" },
+    "file_path": { "type": "string" },
+    "document_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "format": {
+      "type": "string",
+      "enum": ["docx", "xlsx", "pptx", "md", "yaml", "json", "csv", "mmd"]
+    },
+    "origin_type": {
+      "type": "string",
+      "enum": [
+        "USER_PROVIDED",
+        "OFFICIAL_SOURCE",
+        "AUTHORIZED_ADAPTED",
+        "GENERATED_TEMPLATE",
+        "MISSING",
+        "UNVERIFIED"
+      ]
+    },
+    "source_id": { "type": "string" },
+    "license_status": { "type": "string" },
+    "version": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": [
+        "USER_PROVIDED",
+        "OFFICIAL_SOURCE",
+        "AUTHORIZED_ADAPTED",
+        "GENERATED_TEMPLATE",
+        "MISSING",
+        "UNVERIFIED"
+      ]
+    },
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "format_preservation_requirements": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "validation_profile": { "type": "string" }
+  }
+}

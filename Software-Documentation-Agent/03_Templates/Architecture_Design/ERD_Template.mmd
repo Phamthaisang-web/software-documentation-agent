@@ -1,0 +1,22 @@
+%% Mermaid Template for ERD Template
+flowchart TD
+    subgraph ClientLayer ["Client Application"]
+        UI["User Interface (Web/Mobile)"]
+    end
+
+    subgraph ServiceLayer ["Application Services"]
+        API["API Gateway / Controller"]
+        AUTH["Auth Service (JWT/RBAC)"]
+        SVC["Business Service Engine"]
+    end
+
+    subgraph DataLayer ["Data & Storage"]
+        DB[("Primary Database (PostgreSQL/MySQL)")]
+        CACHE[("Redis Cache")]
+    end
+
+    UI -->|HTTPS/REST| API
+    API --> AUTH
+    API --> SVC
+    SVC --> DB
+    SVC --> CACHE

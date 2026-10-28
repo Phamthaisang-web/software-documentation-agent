@@ -1,0 +1,20 @@
+document_id: DOC-SCRUM-007
+title: Sprint Backlog
+project_id: payflow_core
+version: 1.0.0
+created_at: '2026-10-28T21:08:05.556880+00:00'
+updated_at: '2026-10-28T21:08:05.556880+00:00'
+authors:
+- Software Documentation Agent
+reviewers:
+- Engineering Lead (Pending)
+lifecycle_status: DRAFT
+template_used: Sprint Backlog Template
+source_standards:
+- STD-SCRUM-2020
+traceability_links:
+- relation: depends_on
+  target_id: DOC-SCRUM-006
+- relation: depends_on
+  target_id: DOC-SCRUM-008
+unverified_items: []

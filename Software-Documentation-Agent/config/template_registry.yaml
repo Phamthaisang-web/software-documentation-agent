@@ -1,0 +1,1240 @@
+templates:
+- template_id: TPL-PM-001
+  template_name: Project Charter Template
+  file_path: 03_Templates/Project_Management/Project_Charter_Template.docx
+  document_ids:
+  - DOC-PM-001
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-PM-002
+  template_name: Project Scope Statement Template
+  file_path: 03_Templates/Project_Management/Project_Scope_Template.docx
+  document_ids:
+  - DOC-PM-002
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-PM-003
+  template_name: Stakeholder Register Template
+  file_path: 03_Templates/Project_Management/Stakeholder_Register_Template.xlsx
+  document_ids:
+  - DOC-PM-003
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-001
+  template_name: Project Schedule Template
+  file_path: 03_Templates/Project_Management/Project_Schedule_Template.xlsx
+  document_ids:
+  - DOC-DEL-001
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-002
+  template_name: Work Breakdown Structure Template
+  file_path: 03_Templates/Project_Management/WBS_Template.xlsx
+  document_ids:
+  - DOC-DEL-002
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-003
+  template_name: Risk Register Template
+  file_path: 03_Templates/Project_Management/Risk_Register_Template.xlsx
+  document_ids:
+  - DOC-DEL-003
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-004
+  template_name: Issue Log Template
+  file_path: 03_Templates/Project_Management/Issue_Log_Template.xlsx
+  document_ids:
+  - DOC-DEL-004
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-005
+  template_name: Decision Log Template
+  file_path: 03_Templates/Project_Management/Decision_Log_Template.xlsx
+  document_ids:
+  - DOC-DEL-005
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-006
+  template_name: Change Request Log Template
+  file_path: 03_Templates/Project_Management/Change_Request_Log_Template.xlsx
+  document_ids:
+  - DOC-DEL-006
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-007
+  template_name: Meeting Minutes Template
+  file_path: 03_Templates/Project_Management/Meeting_Minutes_Template.docx
+  document_ids:
+  - DOC-DEL-007
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-008
+  template_name: Progress Report Template
+  file_path: 03_Templates/Project_Management/Progress_Report_Template.docx
+  document_ids:
+  - DOC-DEL-008
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-012
+  template_name: Project Handover Template
+  file_path: 03_Templates/Project_Management/Project_Handover_Template.docx
+  document_ids:
+  - DOC-DEL-012
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-001
+  template_name: SRS Template
+  file_path: 03_Templates/Requirements/SRS_Template.docx
+  document_ids:
+  - DOC-REQ-001
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-002
+  template_name: Product Vision Template
+  file_path: 03_Templates/Requirements/Product_Vision_Template.docx
+  document_ids:
+  - DOC-REQ-002
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-003
+  template_name: Functional Requirements Template
+  file_path: 03_Templates/Requirements/Functional_Requirements_Template.xlsx
+  document_ids:
+  - DOC-REQ-003
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-004
+  template_name: Non-Functional Requirements Template
+  file_path: 03_Templates/Requirements/Non_Functional_Requirements_Template.xlsx
+  document_ids:
+  - DOC-REQ-004
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-005
+  template_name: Use Case Template
+  file_path: 03_Templates/Requirements/Use_Case_Template.docx
+  document_ids:
+  - DOC-REQ-005
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-006
+  template_name: User Story Template
+  file_path: 03_Templates/Requirements/User_Story_Acceptance_Criteria_Template.xlsx
+  document_ids:
+  - DOC-REQ-006
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-007
+  template_name: Requirements Traceability Matrix Template
+  file_path: 03_Templates/Requirements/Requirements_Traceability_Matrix_Template.xlsx
+  document_ids:
+  - DOC-REQ-007
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-REQ-008
+  template_name: Acceptance Criteria Template
+  file_path: 03_Templates/Requirements/Acceptance_Criteria_Template.xlsx
+  document_ids:
+  - DOC-REQ-008
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-001
+  template_name: Product Backlog Template
+  file_path: 03_Templates/Scrum/Product_Backlog_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-001
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-002
+  template_name: Product Goal Template
+  file_path: 03_Templates/Scrum/Product_Goal_Template.docx
+  document_ids:
+  - DOC-SCRUM-002
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-003
+  template_name: PBI User Story Template
+  file_path: 03_Templates/Scrum/PBI_User_Story_Template.docx
+  document_ids:
+  - DOC-SCRUM-003
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-004
+  template_name: Backlog Refinement Template
+  file_path: 03_Templates/Scrum/Backlog_Refinement_Template.docx
+  document_ids:
+  - DOC-SCRUM-004
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-005
+  template_name: Release Plan Template
+  file_path: 03_Templates/Scrum/Release_Plan_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-005
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-006
+  template_name: Sprint Planning Template
+  file_path: 03_Templates/Scrum/Sprint_Planning_Template.docx
+  document_ids:
+  - DOC-SCRUM-006
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-007
+  template_name: Sprint Backlog Template
+  file_path: 03_Templates/Scrum/Sprint_Backlog_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-007
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-008
+  template_name: Sprint Goal Template
+  file_path: 03_Templates/Scrum/Sprint_Goal_Template.docx
+  document_ids:
+  - DOC-SCRUM-008
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-009
+  template_name: Task Breakdown Template
+  file_path: 03_Templates/Scrum/Task_Breakdown_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-009
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-010
+  template_name: Sprint Schedule Template
+  file_path: 03_Templates/Scrum/Sprint_Schedule_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-010
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-011
+  template_name: Daily Scrum Log Template
+  file_path: 03_Templates/Scrum/Daily_Scrum_Log_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-011
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-012
+  template_name: Sprint Review Report Template
+  file_path: 03_Templates/Scrum/Sprint_Review_Report_Template.docx
+  document_ids:
+  - DOC-SCRUM-012
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-013
+  template_name: Sprint Retrospective Template
+  file_path: 03_Templates/Scrum/Sprint_Retrospective_Template.docx
+  document_ids:
+  - DOC-SCRUM-013
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-014
+  template_name: Definition of Done Template
+  file_path: 03_Templates/Scrum/Definition_of_Done_Template.docx
+  document_ids:
+  - DOC-SCRUM-014
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-015
+  template_name: Increment Deliverables Template
+  file_path: 03_Templates/Scrum/Sprint_Deliverables_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-015
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-016
+  template_name: Sprint Metrics Burndown Template
+  file_path: 03_Templates/Scrum/Sprint_Metrics_Burndown_Template.xlsx
+  document_ids:
+  - DOC-SCRUM-016
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-SCRUM-017
+  template_name: Definition of Ready Template
+  file_path: 03_Templates/Scrum/Definition_of_Ready_Template.docx
+  document_ids:
+  - DOC-SCRUM-017
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-001
+  template_name: SAD Template
+  file_path: 03_Templates/Architecture_Design/SAD_Template.docx
+  document_ids:
+  - DOC-ARCH-001
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-002
+  template_name: SDD Template
+  file_path: 03_Templates/Architecture_Design/SDD_Template.docx
+  document_ids:
+  - DOC-ARCH-002
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-003
+  template_name: Database Design Template
+  file_path: 03_Templates/Architecture_Design/Database_Design_Template.docx
+  document_ids:
+  - DOC-ARCH-003
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-004
+  template_name: ERD Template
+  file_path: 03_Templates/Architecture_Design/ERD_Template.mmd
+  document_ids:
+  - DOC-ARCH-004
+  format: mmd
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MMD_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-005
+  template_name: API Specification Template
+  file_path: 03_Templates/Architecture_Design/API_Specification_Template.yaml
+  document_ids:
+  - DOC-ARCH-005
+  format: yaml
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: YAML_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-006
+  template_name: UI UX Specification Template
+  file_path: 03_Templates/Architecture_Design/UI_UX_Specification_Template.docx
+  document_ids:
+  - DOC-ARCH-006
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-007
+  template_name: Component Diagram Template
+  file_path: 03_Templates/Architecture_Design/Component_Diagram_Template.mmd
+  document_ids:
+  - DOC-ARCH-007
+  format: mmd
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MMD_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-008
+  template_name: Deployment Architecture Template
+  file_path: 03_Templates/Architecture_Design/Deployment_Architecture_Template.mmd
+  document_ids:
+  - DOC-ARCH-008
+  format: mmd
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MMD_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-009
+  template_name: Technical Design Document Template
+  file_path: 03_Templates/Architecture_Design/Technical_Design_Template.docx
+  document_ids:
+  - DOC-ARCH-009
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-ARCH-010
+  template_name: ADR Template
+  file_path: 03_Templates/Architecture_Design/ADR_Template.md
+  document_ids:
+  - DOC-ARCH-010
+  format: md
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MD_PRESERVATION_PROFILE
+- template_id: TPL-TEST-001
+  template_name: Test Plan Template
+  file_path: 03_Templates/Testing/Test_Plan_Template.docx
+  document_ids:
+  - DOC-TEST-001
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-TEST-002
+  template_name: Test Scenario Template
+  file_path: 03_Templates/Testing/Test_Scenario_Template.xlsx
+  document_ids:
+  - DOC-TEST-002
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-TEST-003
+  template_name: Test Case Specification Template
+  file_path: 03_Templates/Testing/Test_Case_Template.xlsx
+  document_ids:
+  - DOC-TEST-003
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-TEST-004
+  template_name: Test Execution Report Template
+  file_path: 03_Templates/Testing/Test_Execution_Report_Template.xlsx
+  document_ids:
+  - DOC-TEST-004
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-TEST-005
+  template_name: Bug Report Template
+  file_path: 03_Templates/Testing/Bug_Report_Template.xlsx
+  document_ids:
+  - DOC-TEST-005
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-TEST-006
+  template_name: UAT Template
+  file_path: 03_Templates/Testing/UAT_Template.docx
+  document_ids:
+  - DOC-TEST-006
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-TEST-007
+  template_name: Code Review Checklist Template
+  file_path: 03_Templates/Testing/Code_Review_Checklist_Template.md
+  document_ids:
+  - DOC-TEST-007
+  format: md
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MD_PRESERVATION_PROFILE
+- template_id: TPL-TEST-008
+  template_name: Quality Metrics Template
+  file_path: 03_Templates/Testing/Quality_Metrics_Template.xlsx
+  document_ids:
+  - DOC-TEST-008
+  format: xlsx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: XLSX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-009
+  template_name: Release Notes Template
+  file_path: 03_Templates/Delivery/Release_Notes_Template.md
+  document_ids:
+  - DOC-DEL-009
+  format: md
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MD_PRESERVATION_PROFILE
+- template_id: TPL-DEL-010
+  template_name: User Manual Template
+  file_path: 03_Templates/Delivery/User_Manual_Template.docx
+  document_ids:
+  - DOC-DEL-010
+  format: docx
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: DOCX_PRESERVATION_PROFILE
+- template_id: TPL-DEL-011
+  template_name: Installation Guide Template
+  file_path: 03_Templates/Delivery/Installation_Guide_Template.md
+  document_ids:
+  - DOC-DEL-011
+  format: md
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MD_PRESERVATION_PROFILE
+- template_id: TPL-DEL-013
+  template_name: Deployment Guide Template
+  file_path: 03_Templates/Delivery/Deployment_Guide_Template.md
+  document_ids:
+  - DOC-DEL-013
+  format: md
+  origin_type: GENERATED_TEMPLATE
+  source_id: SYS-BUILTIN-TEMPLATES
+  license_status: Internal / MIT Open Documentation
+  version: 1.0.0
+  status: GENERATED_TEMPLATE
+  required_sections:
+  - Header & Identification
+  - Executive Summary
+  - Detailed Specification
+  - Verification Evidence
+  format_preservation_requirements:
+  - Preserve table structure and cell formulas
+  - Preserve heading hierarchy and styling
+  - Replace placeholders without altering layout
+  validation_profile: MD_PRESERVATION_PROFILE

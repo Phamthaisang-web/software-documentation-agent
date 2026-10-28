@@ -1,0 +1,217 @@
+project_id: "payflow_core"
+project_name: "PayFlow Digital Payment Platform"
+project_goal: "Xây dựng cổng thanh toán trực tuyến bảo mật cao, hỗ trợ đa ngân hàng và ví điện tử tuân thủ tiêu chuẩn PCI-DSS và OWASP Top 10."
+analysis_timestamp: "2026-10-29T03:30:00Z"
+status: "VERIFIED"
+
+business_problem:
+  description: "Các doanh nghiệp vừa và nhỏ gặp khó khăn trong việc tích hợp nhiều cổng thanh toán riêng lẻ với chi phí cao và thời gian xử lý giao dịch chậm (> 3 giây)."
+  status: "VERIFIED"
+  evidence_refs:
+    - "docs/business_case.md#L12-L30"
+
+users_and_stakeholders:
+  - id: "STK-001"
+    name: "Phạm Minh Tuấn"
+    role: "Product Owner"
+    influence: "HIGH"
+    status: "VERIFIED"
+    evidence_refs: ["config/stakeholders.yaml:3"]
+  - id: "STK-002"
+    name: "Core Engineering Team"
+    role: "Developers"
+    influence: "HIGH"
+    status: "VERIFIED"
+    evidence_refs: ["package.json"]
+  - id: "STK-003"
+    name: "End Customers"
+    role: "Payment Payer"
+    influence: "MEDIUM"
+    status: "INFERRED"
+    evidence_refs: []
+
+scope:
+  in_scope:
+    - "API xử lý giao dịch thanh toán thẻ ATM nội địa và thẻ quốc tế Visa/Mastercard"
+    - "Cổng thanh toán QR Code tĩnh và động (VietQR)"
+    - "Webhook thông báo trạng thái giao dịch theo thời gian thực"
+    - "Hệ thống đối soát và hoàn tiền tự động"
+  out_of_scope:
+    - "Phát hành thẻ vật lý"
+    - "Cho vay tín dụng vi mô trong Phase 1"
+
+technologies:
+  languages:
+    - "TypeScript"
+    - "Python"
+    - "SQL"
+  frameworks:
+    - "NestJS"
+    - "FastAPI"
+    - "React"
+    - "Prisma ORM"
+  databases:
+    - "PostgreSQL 16"
+    - "Redis 7.2"
+  libraries:
+    - "jsonwebtoken"
+    - "pydantic"
+    - "class-validator"
+    - "winston"
+  evidence_refs:
+    - "package.json"
+    - "requirements.txt"
+    - "docker-compose.yml"
+
+system_architecture:
+  style: "Microservices & Event-Driven Architecture"
+  components:
+    - name: "API Gateway"
+      purpose: "Xác thực JWT, rate limiting và định tuyến yêu cầu"
+      status: "VERIFIED"
+      evidence_refs: ["apps/gateway/src/main.ts"]
+    - name: "Payment Processing Service"
+      purpose: "Xử lý giao dịch thanh toán và kết nối ngân hàng"
+      status: "VERIFIED"
+      evidence_refs: ["apps/payment-service/src/payment.controller.ts"]
+    - name: "Webhook & Notification Service"
+      purpose: "Gửi webhook callback và thông báo email/SMS"
+      status: "VERIFIED"
+      evidence_refs: ["apps/webhook-service/src/consumer.ts"]
+  dependencies:
+    - "PostgreSQL"
+    - "Redis"
+    - "RabbitMQ"
+  status: "VERIFIED"
+  evidence_refs: ["docker-compose.yml"]
+
+functional_requirements:
+  - id: "REQ-FUNC-001"
+    title: "Tạo giao dịch thanh toán (Initiate Payment)"
+    description: "Nhận yêu cầu tạo đơn thanh toán, sinh mã QR VietQR và URL thanh toán"
+    status: "VERIFIED"
+    evidence_refs: ["apps/payment-service/src/payment.controller.ts#L45"]
+  - id: "REQ-FUNC-002"
+    title: "Xác nhận kết quả thanh toán từ ngân hàng (IPN/Webhook Callback)"
+    description: "Tiếp nhận webhook từ cổng ngân hàng, đối soát chữ ký số RSA và cập nhật trạng thái đơn hàng"
+    status: "VERIFIED"
+    evidence_refs: ["apps/payment-service/src/webhook.controller.ts#L20"]
+  - id: "REQ-FUNC-003"
+    title: "Yêu cầu hoàn tiền (Refund Transaction)"
+    description: "Cho phép merchant hoàn tiền toàn phần hoặc một phần cho giao dịch thành công"
+    status: "VERIFIED"
+    evidence_refs: ["apps/payment-service/src/refund.service.ts"]
+
+non_functional_requirements:
+  - id: "REQ-NF-PERF-001"
+    category: "Performance"
+    target_metric: "Xử lý thanh toán phản hồi <= 800ms cho phân vị 95th tại mức tải 1,000 TPS"
+    status: "VERIFIED"
+    evidence_refs: ["tests/load/k6-payment-benchmark.js"]
+  - id: "REQ-NF-SEC-001"
+    category: "Security"
+    target_metric: "Mã hóa toàn bộ dữ liệu thẻ theo chuẩn AES-256; đạt chuẩn OWASP Top 10"
+    status: "VERIFIED"
+    evidence_refs: ["libs/crypto/src/aes.ts"]
+
+data_models:
+  entities:
+    - name: "Transaction"
+      attributes: ["id", "merchant_id", "amount", "currency", "status", "bank_code", "created_at"]
+      relationships: ["Merchant", "PaymentLog"]
+      status: "VERIFIED"
+      evidence_refs: ["prisma/schema.prisma#L35"]
+    - name: "Merchant"
+      attributes: ["id", "name", "api_key", "secret_key", "webhook_url", "is_active"]
+      relationships: ["Transaction"]
+      status: "VERIFIED"
+      evidence_refs: ["prisma/schema.prisma#L15"]
+  status: "VERIFIED"
+
+apis:
+  - id: "API-001"
+    method: "POST"
+    path: "/api/v1/payments"
+    auth_required: true
+    status: "VERIFIED"
+    evidence_refs: ["apps/payment-service/src/payment.controller.ts#L45"]
+  - id: "API-002"
+    method: "GET"
+    path: "/api/v1/payments/{paymentId}"
+    auth_required: true
+    status: "VERIFIED"
+    evidence_refs: ["apps/payment-service/src/payment.controller.ts#L80"]
+  - id: "API-003"
+    method: "POST"
+    path: "/api/v1/payments/{paymentId}/refund"
+    auth_required: true
+    status: "VERIFIED"
+    evidence_refs: ["apps/payment-service/src/refund.controller.ts"]
+
+roles_and_permissions:
+  - role: "SuperAdmin"
+    permissions: ["system:all", "merchants:approve", "finance:reconcile"]
+    status: "VERIFIED"
+    evidence_refs: ["libs/auth/roles.ts"]
+  - role: "MerchantAdmin"
+    permissions: ["payments:create", "payments:read", "refunds:initiate"]
+    status: "VERIFIED"
+    evidence_refs: ["libs/auth/roles.ts"]
+
+external_integrations:
+  - system_name: "Vietcombank Open Banking Gateway"
+    type: "REST & mTLS"
+    status: "VERIFIED"
+    evidence_refs: ["apps/payment-service/src/adapters/vcb.adapter.ts"]
+
+deployment_environments:
+  containerized: true
+  orchestration: "Kubernetes (EKS)"
+  ci_cd_pipelines:
+    - ".github/workflows/ci.yml"
+    - ".github/workflows/deploy-production.yml"
+  status: "VERIFIED"
+
+security:
+  auth_methods:
+    - "API Key + HMAC SHA256 Signature for Server-to-Server"
+    - "JWT (JSON Web Token) with RS256 for Dashboard Admin"
+  encryption: "TLS 1.3 in transit; AES-GCM-256 for database fields at rest"
+  status: "VERIFIED"
+
+testing_strategy:
+  automated_tests_found: true
+  frameworks:
+    - "Jest"
+    - "Pytest"
+    - "k6"
+  execution_evidence: "reports/junit-test-results.xml (Pass Rate: 100%)"
+  status: "VERIFIED"
+
+project_management:
+  methodology: "Scrum"
+  sprint_length_weeks: 2.0
+  status: "VERIFIED"
+
+known_risks_and_limitations:
+  - id: "RISK-001"
+    description: "Sự cố mạng hoặc bảo trì định kỳ từ đối tác ngân hàng gây nghẽn kết nối"
+    severity: "HIGH"
+    mitigation: "Triển khai Circuit Breaker pattern (Resilience4j) và cơ chế tự động chuyển mạch dự phòng (Failover)"
+
+missing_information: []
+conflicting_information: []
+
+evidence_references:
+  - ref_id: "EVID-001"
+    source_path: "package.json"
+    source_type: "PACKAGE_MANIFEST"
+  - ref_id: "EVID-002"
+    source_path: "prisma/schema.prisma"
+    source_type: "DATABASE_SCHEMA"
+  - ref_id: "EVID-003"
+    source_path: "apps/payment-service/src/payment.controller.ts"
+    source_type: "API_CONTROLLER"
+  - ref_id: "EVID-004"
+    source_path: "tests/payment.spec.ts"
+    source_type: "TEST_SUITE"

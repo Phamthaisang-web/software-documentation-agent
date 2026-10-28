@@ -1,0 +1,5 @@
+topic: "Database Engine Selection"
+source_a: "README.md: MongoDB v6.0"
+source_b: "prisma/schema.prisma: datasource db { provider = 'postgresql' }"
+conflict_type: "ENGINE_MISMATCH"
+status: "OPEN"

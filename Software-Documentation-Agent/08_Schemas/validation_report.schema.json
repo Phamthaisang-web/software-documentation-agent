@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ValidationReport",
+  "description": "Schema for automated validation report generated after checking documents, templates, rules, and sources",
+  "type": "object",
+  "required": [
+    "report_id",
+    "generated_at",
+    "summary",
+    "results"
+  ],
+  "properties": {
+    "report_id": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "target_scope": { "type": "string" },
+    "summary": {
+      "type": "object",
+      "required": ["total_checks", "passed", "failed", "skipped", "not_run"],
+      "properties": {
+        "total_checks": { "type": "integer", "minimum": 0 },
+        "passed": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 },
+        "not_run": { "type": "integer", "minimum": 0 },
+        "status": { "type": "string", "enum": ["PASSED", "FAILED", "WARNING"] }
+      }
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check_id", "status", "severity", "message"],
+        "properties": {
+          "check_id": { "type": "string" },
+          "category": { "type": "string" },
+          "target": { "type": "string" },
+          "rule_id": { "type": "string" },
+          "status": { "type": "string", "enum": ["PASSED", "FAILED", "SKIPPED", "NOT_RUN"] },
+          "severity": { "type": "string", "enum": ["BLOCKER", "CRITICAL", "MAJOR", "MINOR", "INFO"] },
+          "message": { "type": "string" },
+          "evidence": { "type": "string" }
+        }
+      }
+    },
+    "missing_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_type", "target_id", "description"],
+        "properties": {
+          "target_type": { "type": "string" },
+          "target_id": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "traceability_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "target_id", "issue_type"],
+        "properties": {
+          "source_id": { "type": "string" },
+          "target_id": { "type": "string" },
+          "issue_type": { "type": "string", "enum": ["MISSING_TARGET", "ORPHAN_ITEM", "BROKEN_LINK"] },
+          "details": { "type": "string" }
+        }
+      }
+    }
+  }
+}

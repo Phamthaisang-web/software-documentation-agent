@@ -1,0 +1,118 @@
+mappings:
+  - standard_id: STD-SCRUM-2020
+    governs_groups:
+      - Scrum
+    governs_documents:
+      - DOC-SCRUM-001
+      - DOC-SCRUM-002
+      - DOC-SCRUM-003
+      - DOC-SCRUM-004
+      - DOC-SCRUM-005
+      - DOC-SCRUM-006
+      - DOC-SCRUM-007
+      - DOC-SCRUM-008
+      - DOC-SCRUM-009
+      - DOC-SCRUM-010
+      - DOC-SCRUM-011
+      - DOC-SCRUM-012
+      - DOC-SCRUM-013
+      - DOC-SCRUM-014
+      - DOC-SCRUM-015
+      - DOC-SCRUM-016
+      - DOC-SCRUM-017
+
+  - standard_id: STD-REQ-29148
+    governs_groups:
+      - Requirements
+      - Project_Management
+    governs_documents:
+      - DOC-PM-002
+      - DOC-REQ-001
+      - DOC-REQ-002
+      - DOC-REQ-003
+      - DOC-REQ-004
+      - DOC-REQ-005
+      - DOC-REQ-006
+      - DOC-REQ-007
+      - DOC-REQ-008
+
+  - standard_id: STD-ARCH-42010
+    governs_groups:
+      - Architecture_Design
+    governs_documents:
+      - DOC-ARCH-001
+      - DOC-ARCH-002
+      - DOC-ARCH-003
+      - DOC-ARCH-004
+      - DOC-ARCH-005
+      - DOC-ARCH-006
+      - DOC-ARCH-007
+      - DOC-ARCH-008
+      - DOC-ARCH-009
+      - DOC-ARCH-010
+
+  - standard_id: STD-TEST-29119-1
+    governs_groups:
+      - Testing_Quality
+    governs_documents:
+      - DOC-TEST-001
+      - DOC-TEST-008
+
+  - standard_id: STD-TEST-29119-2
+    governs_groups:
+      - Testing_Quality
+    governs_documents:
+      - DOC-TEST-001
+      - DOC-TEST-004
+
+  - standard_id: STD-TEST-29119-3
+    governs_groups:
+      - Testing_Quality
+    governs_documents:
+      - DOC-TEST-001
+      - DOC-TEST-002
+      - DOC-TEST-003
+      - DOC-TEST-004
+      - DOC-TEST-005
+      - DOC-TEST-006
+
+  - standard_id: STD-TEST-29119-4
+    governs_groups:
+      - Testing_Quality
+    governs_documents:
+      - DOC-TEST-002
+      - DOC-TEST-003
+
+  - standard_id: STD-PM-21500
+    governs_groups:
+      - Project_Management
+      - Delivery
+    governs_documents:
+      - DOC-PM-001
+      - DOC-PM-002
+      - DOC-PM-003
+      - DOC-DEL-001
+      - DOC-DEL-002
+      - DOC-DEL-003
+      - DOC-DEL-004
+      - DOC-DEL-005
+      - DOC-DEL-006
+      - DOC-DEL-007
+      - DOC-DEL-008
+      - DOC-DEL-012
+
+  - standard_id: STD-API-OAS31
+    governs_groups:
+      - Architecture_Design
+    governs_documents:
+      - DOC-ARCH-005
+
+  - standard_id: STD-SEC-OWASP2021
+    governs_groups:
+      - Architecture_Design
+      - Requirements
+      - Testing_Quality
+    governs_documents:
+      - DOC-REQ-004
+      - DOC-ARCH-009
+      - DOC-TEST-007
